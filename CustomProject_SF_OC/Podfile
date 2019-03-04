@@ -1,0 +1,31 @@
+platform :ios, '8.0'
+
+use_frameworks!
+
+target "CustomProject_SF_OC" do
+
+pod 'AFNetworking'
+pod 'AsyncDisplayKit'
+pod 'MBProgressHUD'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'JSBadgeView'
+pod 'FDFullscreenPopGesture'
+pod 'JSONModel'
+pod 'Aspects'
+pod 'YYKit'
+pod 'DZNEmptyDataSet'
+pod 'ChameleonFramework'
+pod 'CYLTabBarController'
+pod 'Objection'
+pod 'TYPagerController'
+pod 'JJException'
+pod 'IQKeyboardManager'
+pod 'IGListKit'
+pod 'SDCycleScrollView'
+pod 'YNPageViewController'
+pod 'Ono', '~> 2.0.0'
+pod 'FLAnimatedImage'
+
+end

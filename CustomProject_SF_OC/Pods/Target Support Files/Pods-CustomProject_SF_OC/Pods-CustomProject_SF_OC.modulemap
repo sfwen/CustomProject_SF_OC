@@ -1,0 +1,6 @@
+framework module Pods_CustomProject_SF_OC {
+  umbrella header "Pods-CustomProject_SF_OC-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,50 @@
+//
+//  PrefixHeader.pch
+//  CustomProject_SF_OC
+//
+//  Created by Land on 2018/12/6.
+//  Copyright © 2018年 sfwen. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "AppToolMacro.h"
+#import "ConfigMacro.h"
+#import "APIMacro.h"
+#import "ColorMacro.h"
+#import "NotifyMacro.h"
+
+#import "Tools.h"
+#import "TABAnimated.h"
+
+#import "BasicViewController.h"
+#import "BasicTableViewController.h"
+#import "BasicNavigationController.h"
+#import "NetworkHelper.h"
+#import "PushHelper.h"
+
+#import <Masonry/Masonry.h>
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import <ChameleonFramework/Chameleon.h>
+#import <YYKit/YYKit.h>
+#import <MJRefresh/MJRefresh.h>
+#import <IGListKit/IGListKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+
+#import "UIImage+Category.h"
+#import "NSString+JSONExpansion.h"
+#import "NSString+Category.h"
+#import "ASImageNode+Category.h"
+#import "UIView+Category.h"
+#import "UIImageView+Category.h"
+#import "NSDictionary+Category.h"
+
+
+#endif /* PrefixHeader_pch */
