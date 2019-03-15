@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "61F032F5545DB2FF09C4B29E94C7ACC7"
+               BlueprintIdentifier = "0F5CDF8866918876CE29840ACC9A275B"
                BlueprintName = "CYLTabBarController"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "CYLTabBarController.framework">

@@ -8,6 +8,7 @@
 
 #import <JSONModel/JSONModel.h>
 #import "ImageModel.h"
+#import "VideoModel.h"
 
 @interface BasicModel : JSONModel <IGListDiffable>
 

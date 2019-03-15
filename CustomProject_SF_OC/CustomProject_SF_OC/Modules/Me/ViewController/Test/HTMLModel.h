@@ -17,7 +17,16 @@
 
 @end
 
+typedef NS_ENUM(NSInteger, ItemDataType) {
+    ItemDataType_Text =0,
+    ItemDataType_Image,
+    ItemDataType_Gif,
+    ItemDataType_Video
+};
+
 @interface HTMLItemModel : BasicModel
+
+@property (nonatomic, assign) ItemDataType dataType;
 
 @property (nonatomic, copy) NSString * content;
 @property (nonatomic, assign) CGSize contentSize;

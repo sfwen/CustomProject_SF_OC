@@ -34,7 +34,7 @@
  */
 + (NSString *)timeDifferenceWithNowTimer:(NSString *)timerSp;
 
-- (NSString *)replacingCharacters:(NSString *)pattern template:(NSString *)template;
+- (NSString *)replacingCharacters:(NSString *)pattern template:(NSString *)templateStr;
 
 /**
  判断该字符串是不是一个有效的URL

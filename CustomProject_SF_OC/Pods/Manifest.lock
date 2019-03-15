@@ -25,7 +25,7 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
-  - CYLTabBarController (1.18.0)
+  - CYLTabBarController (1.19.2)
   - DZNEmptyDataSet (1.8.1)
   - FDFullscreenPopGesture (1.1)
   - FLAnimatedImage (1.0.12)
@@ -115,7 +115,7 @@ SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   AsyncDisplayKit: 2234dd8d8770a5ed72936b3f8394bd5a807765f6
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  CYLTabBarController: 13ee7f85f1e2dc67e865d35bf704e81f1380d34d
+  CYLTabBarController: 5b364d6be617331a07f3f3f0ea537f7950501042
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
@@ -138,6 +138,6 @@ SPEC CHECKSUMS:
   YNPageViewController: 33040d429adf0b415d4449ffeec848d8339934ea
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: faa5fe7ac42a9d8832b8c3d123ff031ee5f90d4e
+PODFILE CHECKSUM: 37794899bd01c781cb613ac39cac09bd24a2db4a
 
 COCOAPODS: 1.4.0

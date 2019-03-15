@@ -150,11 +150,11 @@
             for (ONOXMLElement *celement in element.children) {
                 HTMLItemModel * itemModel = [[HTMLItemModel alloc] init];
                 if ([celement.tag isEqualToString:@"p"]) {
-                    itemModel.content = [NSString stringWithFormat:@"%@\n", celement.stringValue];
+                    itemModel.dataType = ItemDataType_Text;
+                    itemModel.content = [NSString stringWithFormat:@"%@", celement.stringValue];
                 } else if ([celement.tag isEqualToString:@"img"]) {
                     NSString * imgStr = celement[@"src"];
                     if (imgStr.length > 0) {
-                        //                    [itemModel.imagesArray addObject:imgStr];
                         [itemModel.imagesArray addObject:[self createImageModel:imgStr]];
                     }
                 } else if ([celement.tag isEqualToString:@"div"]) {
@@ -162,9 +162,19 @@
                         if ([ccelement.tag isEqualToString:@"img"]) {
                             NSString * imgStr = ccelement[@"src"];
                             if (imgStr.length > 0) {
-                                //                            [itemModel.imagesArray addObject:imgStr];
                                 [itemModel.imagesArray addObject:[self createImageModel:imgStr]];
                             }
+                        } else if ([ccelement.tag isEqualToString:@"video"]) {
+                            NSLog(@"视频");
+                            NSLog(@"封面：%@", ccelement[@"poster"]);
+                            NSLog(@"地址：%@", ccelement[@"src"]);
+                            VideoModel * videoModel = [[VideoModel alloc] init];
+                            
+                            NSString * imgStr = ccelement[@"poster"];
+                            videoModel.imageModel = [self createImageModel:imgStr];
+                            videoModel.url = ccelement[@"src"];
+                            
+                            [itemModel.imagesArray addObject:videoModel];
                         }
                     }
                 }
@@ -185,38 +195,14 @@
         
     });
     
-    return;
-    
-    // 1. 创建一个属性文本
-    NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] init];
-    
-    [model.contentArray enumerateObjectsUsingBlock:^(HTMLItemModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        //添加文本+图片
-        if (obj.content.length > 0) {
-            NSMutableAttributedString * abs = [[NSMutableAttributedString alloc] initWithString:obj.content];
-            // 2. 为文本设置属性
-            abs.font = APPFONT(14);
-            abs.color = FlatBlack;
-            abs.lineSpacing = 8;
-            [attributedString appendAttributedString:abs];
-        }
-        
-        [obj.imagesArray enumerateObjectsUsingBlock:^(NSString *  _Nonnull imageURLStr, NSUInteger idx, BOOL * _Nonnull stop) {
-//            NSLog(@"%@", imageURLStr);
-            [self addImageToAttributedTextWithURL:imageURLStr abs:attributedString];
-        }];
-        
-    }];
-    
     //添加 阅读原文
-    [attributedString appendString:@"\n\n"];
-    NSMutableAttributedString * operAbs = [[NSMutableAttributedString alloc] initWithString:@"阅读原文"];
-    operAbs.color = FlatRed;
-    operAbs.font = APPFONT(12);
-    operAbs.strikethroughStyle = NSUnderlineStyleSingle | NSUnderlinePatternSolid;
-    [attributedString appendAttributedString:operAbs];
+//    NSMutableAttributedString * operAbs = [[NSMutableAttributedString alloc] initWithString:@"阅读原文"];
+//    operAbs.color = FlatRed;
+//    operAbs.font = APPFONT(12);
+//    operAbs.strikethroughStyle = NSUnderlineStyleSingle | NSUnderlinePatternSolid;
+//    [attributedString appendAttributedString:operAbs];
 
-    self.attributedString = attributedString;
+//    self.attributedString = attributedString;
     
 //    //获取图片资源
 //    NSArray *attachments =  self.textView.textLayout.attachments;
