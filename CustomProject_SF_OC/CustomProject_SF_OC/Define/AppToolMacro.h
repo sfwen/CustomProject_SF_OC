@@ -39,7 +39,7 @@
 //字体
 //#define ICONFONT(S) [UIFont fontWithName:@"iconfont" size:S]  [UIFont systemFontOfSize:(fontSize)]  [UIFont boldSystemFontOfSize:(S)]
 //#define BoldFONT(S) [UIFont fontWithName:@"Helvetica-Bold" size:S] [UIFont fontWithName:@"PingFangSC-Regular"size:20]; 
-#define APPFONT(fontSize) [UIFont fontWithName:@"PingFangSC-Regular"size:(fontSize)]
+#define APPFONT(fontSize) [UIFont fontWithName:@"PingFangSC-Regular" size:(fontSize)]
 #define APPBOLDFONT(S) [UIFont boldSystemFontOfSize:(S)]
 
 //计算文字宽高

@@ -46,6 +46,8 @@
 		BE2B4937222935B00027063E /* Test4.html in Resources */ = {isa = PBXBuildFile; fileRef = BE2B4936222935AF0027063E /* Test4.html */; };
 		BE30DFA721E99BBC007C8C3B /* ReadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE30DFA621E99BBC007C8C3B /* ReadOperation.m */; };
 		BE30DFAA21E99C82007C8C3B /* BookReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE30DFA921E99C82007C8C3B /* BookReadViewController.m */; };
+		BE3DDAB822379B4B0021C270 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3DDAB722379B4B0021C270 /* VideoModel.m */; };
+		BE3DDABB2237A4340021C270 /* AttributeVideoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3DDABA2237A4340021C270 /* AttributeVideoCollectionViewCell.m */; };
 		BE4325BF21BB636600C4AAFC /* UIFont+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4325BE21BB636600C4AAFC /* UIFont+Adapter.m */; };
 		BE4325C221BB6AF800C4AAFC /* NSObject+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4325C121BB6AF800C4AAFC /* NSObject+Method.m */; };
 		BE4325C821BB777A00C4AAFC /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4325C721BB777A00C4AAFC /* NetworkHelper.m */; };
@@ -73,6 +75,9 @@
 		BE4AE17B21D2100B00196D08 /* ASImageNode+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4AE17A21D2100B00196D08 /* ASImageNode+Category.m */; };
 		BE4AE18121D22A2500196D08 /* TopicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4AE18021D22A2500196D08 /* TopicCollectionViewCell.m */; };
 		BE4AE18721D2325A00196D08 /* PromoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4AE18621D2325A00196D08 /* PromoCollectionViewCell.m */; };
+		BE4D59212233BCB9008A224D /* FaceDetectorUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE4D59202233BCB9008A224D /* FaceDetectorUtil.mm */; };
+		BE4D59242233BD8C008A224D /* FaceRecognizerUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE4D59232233BD8C008A224D /* FaceRecognizerUtil.mm */; };
+		BE4D592B2233BFD4008A224D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D592A2233BFD4008A224D /* opencv2.framework */; };
 		BE5BF17821BF9958003FA773 /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17721BF9958003FA773 /* ArticleListViewController.m */; };
 		BE5BF18B21BFB42B003FA773 /* TABMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17C21BFB42B003FA773 /* TABMethod.m */; };
 		BE5BF18C21BFB42B003FA773 /* TABViewAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17E21BFB42B003FA773 /* TABViewAnimated.m */; };
@@ -86,6 +91,18 @@
 		BE5BF19A21BFB6A9003FA773 /* BasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF19921BFB6A9003FA773 /* BasicModel.m */; };
 		BE5BF19E21BFB82A003FA773 /* FPSDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF19D21BFB82A003FA773 /* FPSDisplay.m */; };
 		BE5BF1A121BFBBAB003FA773 /* ArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF1A021BFBBAB003FA773 /* ArticleCell.m */; };
+		BE5D60182230C641006A054E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5D60172230C641006A054E /* Accelerate.framework */; };
+		BE5D601A2230C652006A054E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5D60192230C652006A054E /* AssetsLibrary.framework */; };
+		BE5D601C2230C65A006A054E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5D601B2230C65A006A054E /* CoreGraphics.framework */; };
+		BE5D601E2230C662006A054E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5D601D2230C661006A054E /* CoreImage.framework */; };
+		BE5D60202230C66E006A054E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5D601F2230C66D006A054E /* CoreMedia.framework */; };
+		BE5D60222230C675006A054E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5D60212230C675006A054E /* CoreVideo.framework */; };
+		BE5D60242230C67B006A054E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5D60232230C67B006A054E /* QuartzCore.framework */; };
+		BE5D60262230C683006A054E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5D60252230C683006A054E /* AVFoundation.framework */; };
+		BE5D60292230C981006A054E /* FaceDetectionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE5D60282230C981006A054E /* FaceDetectionViewController.mm */; };
+		BE5D60322230F74D006A054E /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5D60302230F74D006A054E /* haarcascade_frontalface_alt2.xml */; };
+		BE5D60332230F74D006A054E /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = BE5D60312230F74D006A054E /* haarcascade_eye_tree_eyeglasses.xml */; };
+		BE5D60362230F82E006A054E /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE5D60352230F82E006A054E /* UIImage+OpenCV.mm */; };
 		BE6052EA21BA54C400844F76 /* TabBarConrollerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6052E921BA54C400844F76 /* TabBarConrollerConfig.m */; };
 		BE6052EF21BA637F00844F76 /* ServiceMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6052EE21BA637F00844F76 /* ServiceMediator.m */; };
 		BE6052F221BA649700844F76 /* ServiceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6052F121BA649700844F76 /* ServiceModule.m */; };
@@ -273,6 +290,10 @@
 		BE30DFA621E99BBC007C8C3B /* ReadOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadOperation.m; sourceTree = "<group>"; };
 		BE30DFA821E99C82007C8C3B /* BookReadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookReadViewController.h; sourceTree = "<group>"; };
 		BE30DFA921E99C82007C8C3B /* BookReadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookReadViewController.m; sourceTree = "<group>"; };
+		BE3DDAB622379B4B0021C270 /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		BE3DDAB722379B4B0021C270 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		BE3DDAB92237A4340021C270 /* AttributeVideoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeVideoCollectionViewCell.h; sourceTree = "<group>"; };
+		BE3DDABA2237A4340021C270 /* AttributeVideoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeVideoCollectionViewCell.m; sourceTree = "<group>"; };
 		BE4325BD21BB636600C4AAFC /* UIFont+Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Adapter.h"; sourceTree = "<group>"; };
 		BE4325BE21BB636600C4AAFC /* UIFont+Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Adapter.m"; sourceTree = "<group>"; };
 		BE4325C021BB6AF800C4AAFC /* NSObject+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Method.h"; sourceTree = "<group>"; };
@@ -328,6 +349,11 @@
 		BE4AE18021D22A2500196D08 /* TopicCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopicCollectionViewCell.m; sourceTree = "<group>"; };
 		BE4AE18521D2325A00196D08 /* PromoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromoCollectionViewCell.h; sourceTree = "<group>"; };
 		BE4AE18621D2325A00196D08 /* PromoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromoCollectionViewCell.m; sourceTree = "<group>"; };
+		BE4D591F2233BCB9008A224D /* FaceDetectorUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetectorUtil.h; sourceTree = "<group>"; };
+		BE4D59202233BCB9008A224D /* FaceDetectorUtil.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetectorUtil.mm; sourceTree = "<group>"; };
+		BE4D59222233BD8C008A224D /* FaceRecognizerUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerUtil.h; sourceTree = "<group>"; };
+		BE4D59232233BD8C008A224D /* FaceRecognizerUtil.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceRecognizerUtil.mm; sourceTree = "<group>"; };
+		BE4D592A2233BFD4008A224D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		BE5BF17621BF9958003FA773 /* ArticleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
 		BE5BF17721BF9958003FA773 /* ArticleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
 		BE5BF17A21BFB42B003FA773 /* TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimated.h; sourceTree = "<group>"; };
@@ -355,6 +381,20 @@
 		BE5BF19D21BFB82A003FA773 /* FPSDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSDisplay.m; sourceTree = "<group>"; };
 		BE5BF19F21BFBBAB003FA773 /* ArticleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleCell.h; sourceTree = "<group>"; };
 		BE5BF1A021BFBBAB003FA773 /* ArticleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleCell.m; sourceTree = "<group>"; };
+		BE5D60172230C641006A054E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		BE5D60192230C652006A054E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		BE5D601B2230C65A006A054E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE5D601D2230C661006A054E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		BE5D601F2230C66D006A054E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BE5D60212230C675006A054E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BE5D60232230C67B006A054E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BE5D60252230C683006A054E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BE5D60272230C981006A054E /* FaceDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetectionViewController.h; sourceTree = "<group>"; };
+		BE5D60282230C981006A054E /* FaceDetectionViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetectionViewController.mm; sourceTree = "<group>"; };
+		BE5D60302230F74D006A054E /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		BE5D60312230F74D006A054E /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		BE5D60342230F82E006A054E /* UIImage+OpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		BE5D60352230F82E006A054E /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
 		BE6052E821BA54C400844F76 /* TabBarConrollerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarConrollerConfig.h; sourceTree = "<group>"; };
 		BE6052E921BA54C400844F76 /* TabBarConrollerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarConrollerConfig.m; sourceTree = "<group>"; };
 		BE6052EC21BA629E00844F76 /* ServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceProtocol.h; sourceTree = "<group>"; };
@@ -551,8 +591,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5D60262230C683006A054E /* AVFoundation.framework in Frameworks */,
+				BE5D60242230C67B006A054E /* QuartzCore.framework in Frameworks */,
+				BE5D60222230C675006A054E /* CoreVideo.framework in Frameworks */,
+				BE5D60202230C66E006A054E /* CoreMedia.framework in Frameworks */,
+				BE5D601E2230C662006A054E /* CoreImage.framework in Frameworks */,
+				BE5D601C2230C65A006A054E /* CoreGraphics.framework in Frameworks */,
+				BE5D601A2230C652006A054E /* AssetsLibrary.framework in Frameworks */,
+				BE5D60182230C641006A054E /* Accelerate.framework in Frameworks */,
 				BE2B49242228D4080027063E /* libxml2.tbd in Frameworks */,
 				D42AFC9F2064DC3AA3AF5849 /* Pods_CustomProject_SF_OC.framework in Frameworks */,
+				BE4D592B2233BFD4008A224D /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +611,14 @@
 		66DF29C5BCED70996F671959 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE5D60252230C683006A054E /* AVFoundation.framework */,
+				BE5D60232230C67B006A054E /* QuartzCore.framework */,
+				BE5D60212230C675006A054E /* CoreVideo.framework */,
+				BE5D601F2230C66D006A054E /* CoreMedia.framework */,
+				BE5D601D2230C661006A054E /* CoreImage.framework */,
+				BE5D601B2230C65A006A054E /* CoreGraphics.framework */,
+				BE5D60192230C652006A054E /* AssetsLibrary.framework */,
+				BE5D60172230C641006A054E /* Accelerate.framework */,
 				BE2B49252228D67B0027063E /* libresolv.tbd */,
 				BE2B49222228D2F90027063E /* libxml2.tbd */,
 				BE2B49202228D2DF0027063E /* libxml2.2.tbd */,
@@ -588,6 +645,8 @@
 				BE063C9E222A773300E26929 /* AttributeContentCollectionViewCell.m */,
 				BE063CA0222A774100E26929 /* AttributeImageCollectionViewCell.h */,
 				BE063CA1222A774100E26929 /* AttributeImageCollectionViewCell.m */,
+				BE3DDAB92237A4340021C270 /* AttributeVideoCollectionViewCell.h */,
+				BE3DDABA2237A4340021C270 /* AttributeVideoCollectionViewCell.m */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -595,8 +654,11 @@
 		BE13790421F1B336002DC33A /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				BE5D602C2230F5C9006A054E /* Face */,
 				BE13790521F1B378002DC33A /* TestHorizontalRefreshViewController.h */,
 				BE13790621F1B378002DC33A /* TestHorizontalRefreshViewController.m */,
+				BE5D60272230C981006A054E /* FaceDetectionViewController.h */,
+				BE5D60282230C981006A054E /* FaceDetectionViewController.mm */,
 				BE28DA812226757200F1C7FD /* AttributeViewController.h */,
 				BE28DA822226757200F1C7FD /* AttributeViewController.m */,
 				BE2B492C2228E1440027063E /* HTMLModel.h */,
@@ -814,6 +876,14 @@
 			path = SystemTool;
 			sourceTree = "<group>";
 		};
+		BE4D59292233BFD4008A224D /* opencv */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D592A2233BFD4008A224D /* opencv2.framework */,
+			);
+			path = opencv;
+			sourceTree = "<group>";
+		};
 		BE5BF17921BFB42B003FA773 /* TABAnimated */ = {
 			isa = PBXGroup;
 			children = (
@@ -858,6 +928,8 @@
 				BE04F56621C0DF4500F1E87D /* QueryPara.m */,
 				BE063C9A222A71D200E26929 /* ImageModel.h */,
 				BE063C9B222A71D200E26929 /* ImageModel.m */,
+				BE3DDAB622379B4B0021C270 /* VideoModel.h */,
+				BE3DDAB722379B4B0021C270 /* VideoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -869,6 +941,19 @@
 				BE5BF19D21BFB82A003FA773 /* FPSDisplay.m */,
 			);
 			path = FPSDisplayTool;
+			sourceTree = "<group>";
+		};
+		BE5D602C2230F5C9006A054E /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				BE5D60342230F82E006A054E /* UIImage+OpenCV.h */,
+				BE5D60352230F82E006A054E /* UIImage+OpenCV.mm */,
+				BE4D591F2233BCB9008A224D /* FaceDetectorUtil.h */,
+				BE4D59202233BCB9008A224D /* FaceDetectorUtil.mm */,
+				BE4D59222233BD8C008A224D /* FaceRecognizerUtil.h */,
+				BE4D59232233BD8C008A224D /* FaceRecognizerUtil.mm */,
+			);
+			path = Face;
 			sourceTree = "<group>";
 		};
 		BE6052EB21BA625A00844F76 /* AppDelegate-Category */ = {
@@ -1262,6 +1347,7 @@
 		BEE2A19B21B90F30000A6C10 /* ThridLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				BE4D59292233BFD4008A224D /* opencv */,
 				BE5BF17921BFB42B003FA773 /* TABAnimated */,
 				BE4325D821BB9CF200C4AAFC /* Encryption */,
 				BE60531621BA761700844F76 /* NavigationBarShadow */,
@@ -1285,6 +1371,8 @@
 		BEE2A19D21B90F30000A6C10 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BE5D60312230F74D006A054E /* haarcascade_eye_tree_eyeglasses.xml */,
+				BE5D60302230F74D006A054E /* haarcascade_frontalface_alt2.xml */,
 				BE1E9AC921E8709400AF190B /* 求魔.txt */,
 				BE2B491E2228C77D0027063E /* Test1.html */,
 				BE2B4932222933F80027063E /* Test2.html */,
@@ -1569,8 +1657,10 @@
 				BEE2A1DC21B91BA4000A6C10 /* t_read_d@2x.png in Resources */,
 				BEE2A1DB21B91BA4000A6C10 /* t_person_n@3x.png in Resources */,
 				BE2B4935222935250027063E /* Test3.html in Resources */,
+				BE5D60322230F74D006A054E /* haarcascade_frontalface_alt2.xml in Resources */,
 				BEE2A1D421B91BA4000A6C10 /* t_activity_d@2x.png in Resources */,
 				BEA3C37621C356CB00919389 /* navigationbar_more@2x.png in Resources */,
+				BE5D60332230F74D006A054E /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1699,6 +1789,7 @@
 				BEFBFED721D464160007DF54 /* M_GoodsCollectionViewCell.m in Sources */,
 				BE43261221BBBD3C00C4AAFC /* BatteryInfoManager.m in Sources */,
 				BE79B57921EDD99800F9EAF4 /* ReadView.m in Sources */,
+				BE4D59212233BCB9008A224D /* FaceDetectorUtil.mm in Sources */,
 				BEA3C36B21C356CB00919389 /* UIScrollView+TYSnapshot.m in Sources */,
 				BE1C45FD21CB3A54000C738F /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				BEC280A821D327DD008E143E /* GoodsInfoModel.m in Sources */,
@@ -1754,6 +1845,7 @@
 				BE4325C221BB6AF800C4AAFC /* NSObject+Method.m in Sources */,
 				BEE2A1AF21B9183C000A6C10 /* AppDelegate+Category.m in Sources */,
 				BE1C461521CB8D0F000C738F /* BannerInfoModel.m in Sources */,
+				BE5D60362230F82E006A054E /* UIImage+OpenCV.mm in Sources */,
 				BEC280B421D33176008E143E /* GoodsObject.m in Sources */,
 				BEA3C37921C356CB00919389 /* UIAlertController+WKWebAlert.m in Sources */,
 				BEFBFEE521D4AC260007DF54 /* AdSectionController.m in Sources */,
@@ -1782,6 +1874,7 @@
 				BE5BF18C21BFB42B003FA773 /* TABViewAnimated.m in Sources */,
 				BE4325EF21BB9CF200C4AAFC /* NSString+WY_AES256.m in Sources */,
 				BE5BF19221BFB42B003FA773 /* UIView+TABLayerout.m in Sources */,
+				BE5D60292230C981006A054E /* FaceDetectionViewController.mm in Sources */,
 				BE5BF18D21BFB42B003FA773 /* UICollectionView+Animated.m in Sources */,
 				BEAFB79421CC977500770077 /* MenuBackgroundCollectionViewCell.m in Sources */,
 				BEA3C36321C356CB00919389 /* PAWebView.m in Sources */,
@@ -1791,7 +1884,9 @@
 				BE28DA832226757200F1C7FD /* AttributeViewController.m in Sources */,
 				BE22A16121E2002C0042C342 /* ReadModel.m in Sources */,
 				BEB66CFF21BE6D8100468435 /* Tools.m in Sources */,
+				BE4D59242233BD8C008A224D /* FaceRecognizerUtil.mm in Sources */,
 				BE22A16321E2002C0042C342 /* ReadRecordModel.m in Sources */,
+				BE3DDAB822379B4B0021C270 /* VideoModel.m in Sources */,
 				BEAFB78821CC8A4A00770077 /* BannerCollectionViewCell.m in Sources */,
 				BEAFB79721CCC3B000770077 /* MenuCollectionViewCell.m in Sources */,
 				BE4AE18721D2325A00196D08 /* PromoCollectionViewCell.m in Sources */,
@@ -1813,6 +1908,7 @@
 				BEFBFEE821D4AC260007DF54 /* MenuSectionController.m in Sources */,
 				BEA3C37021C356CB00919389 /* registerURLSchemes.m in Sources */,
 				BE5BF19021BFB42B003FA773 /* UITableViewCell+Animated.m in Sources */,
+				BE3DDABB2237A4340021C270 /* AttributeVideoCollectionViewCell.m in Sources */,
 				BEB66CF521BE67AA00468435 /* StoreMainViewController.m in Sources */,
 				BE1E9ACD21E8740F00AF190B /* ReadChapterListModel.m in Sources */,
 				BEA3C36C21C356CB00919389 /* UITableView+TYSnapshot.m in Sources */,
@@ -1968,6 +2064,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46BJM27RKU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomProject_SF_OC/ThridLibraries/OpenCV",
+					"$(PROJECT_DIR)/CustomProject_SF_OC/ThridLibraries/opencv",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CustomProject_SF_OC/AppDelegate/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
@@ -1977,6 +2078,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "asd.asd.asd121ssdd.CustomProject-SF-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
 			};
 			name = Debug;
 		};
@@ -1987,6 +2089,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46BJM27RKU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomProject_SF_OC/ThridLibraries/OpenCV",
+					"$(PROJECT_DIR)/CustomProject_SF_OC/ThridLibraries/opencv",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CustomProject_SF_OC/AppDelegate/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
@@ -1996,6 +2103,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "asd.asd.asd121ssdd.CustomProject-SF-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
 			};
 			name = Release;
 		};

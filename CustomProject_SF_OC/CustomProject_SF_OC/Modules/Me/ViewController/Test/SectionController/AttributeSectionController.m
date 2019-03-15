@@ -10,6 +10,7 @@
 #import "HTMLModel.h"
 #import "AttributeContentCollectionViewCell.h"
 #import "AttributeImageCollectionViewCell.h"
+#import "AttributeVideoCollectionViewCell.h"
 
 @interface AttributeSectionController ()
 
@@ -37,7 +38,19 @@
         h = self.model.contentSize.height + 0.5;
     } else {
         NSInteger i = self.model.content.length > 0 ? index - 1 : index;
-        ImageModel * imageModel = [self.model.imagesArray objectAtIndex:i];
+        id obj = [self.model.imagesArray objectAtIndex:i];
+        
+        ImageModel * imageModel;
+        if ([[obj class] isEqual:[ImageModel class]]) {
+            imageModel = [self.model.imagesArray objectAtIndex:i];
+        } else if ([[obj class] isEqual:[VideoModel class]]) {
+            VideoModel * videoModel = [self.model.imagesArray objectAtIndex:i];
+            imageModel = videoModel.imageModel;
+        } else {
+            imageModel = [ImageModel new];
+            imageModel.w = 1;
+            imageModel.h = 0;
+        }
         h = self.collectionContext.containerSize.width / imageModel.w * imageModel.h;
     }
     
@@ -51,10 +64,19 @@
         return cell;
     } else {
         NSInteger i = self.model.content.length > 0 ? index - 1 : index;
-        ImageModel * imageModel = [self.model.imagesArray objectAtIndex:i];
-        AttributeImageCollectionViewCell * cell = [self.collectionContext dequeueReusableCellOfClass:[AttributeImageCollectionViewCell class] forSectionController:self atIndex:index];
-        cell.contentView.backgroundColor = [UIColor whiteColor];
-        [cell configCellData:imageModel.urlStr];
+        id obj = [self.model.imagesArray objectAtIndex:i];
+        
+        BasicCollectionViewCell * cell;
+        if ([[obj class] isEqual:[ImageModel class]]) {
+            ImageModel * imageModel = [self.model.imagesArray objectAtIndex:i];
+            cell = [self.collectionContext dequeueReusableCellOfClass:[AttributeImageCollectionViewCell class] forSectionController:self atIndex:index];
+            cell.contentView.backgroundColor = [UIColor whiteColor];
+            [cell configCellData:imageModel.urlStr];
+        } else if ([[obj class] isEqual:[VideoModel class]]) {
+            cell = [self.collectionContext dequeueReusableCellOfClass:[AttributeVideoCollectionViewCell class] forSectionController:self atIndex:index];
+            [cell configCellData:nil];
+        }
+        
         return cell;
     }
 }
