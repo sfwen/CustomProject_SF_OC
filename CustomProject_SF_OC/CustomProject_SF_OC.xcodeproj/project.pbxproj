@@ -78,6 +78,7 @@
 		BE4AE18721D2325A00196D08 /* PromoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4AE18621D2325A00196D08 /* PromoCollectionViewCell.m */; };
 		BE4D59212233BCB9008A224D /* FaceDetectorUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE4D59202233BCB9008A224D /* FaceDetectorUtil.mm */; };
 		BE4D59242233BD8C008A224D /* FaceRecognizerUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE4D59232233BD8C008A224D /* FaceRecognizerUtil.mm */; };
+		BE4D592B2233BFD4008A224D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D592A2233BFD4008A224D /* opencv2.framework */; };
 		BE5BF17821BF9958003FA773 /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17721BF9958003FA773 /* ArticleListViewController.m */; };
 		BE5BF18B21BFB42B003FA773 /* TABMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17C21BFB42B003FA773 /* TABMethod.m */; };
 		BE5BF18C21BFB42B003FA773 /* TABViewAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17E21BFB42B003FA773 /* TABViewAnimated.m */; };
@@ -354,6 +355,7 @@
 		BE4D59202233BCB9008A224D /* FaceDetectorUtil.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetectorUtil.mm; sourceTree = "<group>"; };
 		BE4D59222233BD8C008A224D /* FaceRecognizerUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerUtil.h; sourceTree = "<group>"; };
 		BE4D59232233BD8C008A224D /* FaceRecognizerUtil.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceRecognizerUtil.mm; sourceTree = "<group>"; };
+		BE4D592A2233BFD4008A224D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		BE5BF17621BF9958003FA773 /* ArticleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
 		BE5BF17721BF9958003FA773 /* ArticleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
 		BE5BF17A21BFB42B003FA773 /* TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimated.h; sourceTree = "<group>"; };
@@ -882,6 +884,14 @@
 				BE43261121BBBD3C00C4AAFC /* NetWorkInfoManager.m */,
 			);
 			path = SystemTool;
+			sourceTree = "<group>";
+		};
+		BE4D59292233BFD4008A224D /* opencv */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D592A2233BFD4008A224D /* opencv2.framework */,
+			);
+			path = opencv;
 			sourceTree = "<group>";
 		};
 		BE5BF17921BFB42B003FA773 /* TABAnimated */ = {
