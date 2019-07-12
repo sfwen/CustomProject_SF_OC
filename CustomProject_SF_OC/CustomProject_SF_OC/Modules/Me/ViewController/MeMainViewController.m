@@ -10,6 +10,7 @@
 #import "TestWaterViewController.h"
 #import "TestHorizontalRefreshViewController.h"
 #import "AttributeViewController.h"
+#import "ChartsViewController.h"
 
 @interface MeMainViewController ()
 
@@ -20,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +31,7 @@
 
 - (void)loadData {
     NSMutableArray * data = [NSMutableArray new];
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 4; i++) {
         [data addObject:[NSString stringWithFormat:@"%@", @(i)]];
     }
     
@@ -37,17 +39,20 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BasicViewController * vc;
     if (indexPath.row == 0) {
-        TestHorizontalRefreshViewController * vc = [[TestHorizontalRefreshViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-        return;
+        vc = [[TestHorizontalRefreshViewController alloc] init];
     } else if (indexPath.row == 1) {
-        AttributeViewController * vc = [[AttributeViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-        return;
+        vc = [[AttributeViewController alloc] init];
+    } else if (indexPath.row == 3) {
+        vc = [[ChartsViewController alloc] init];
+    } else {
+        vc = [[TestWaterViewController alloc] init];
     }
-    TestWaterViewController * vc = [[TestWaterViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    if (vc) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end

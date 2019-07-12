@@ -27,6 +27,7 @@ pod 'SDCycleScrollView'
 pod 'YNPageViewController'
 pod 'Ono', '~> 2.0.0'
 pod 'FLAnimatedImage'
+pod 'AAChartKit', :git => 'https://github.com/AAChartModel/AAChartKit.git'
 
 end
 

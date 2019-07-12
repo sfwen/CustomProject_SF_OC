@@ -78,7 +78,6 @@
 		BE4AE18721D2325A00196D08 /* PromoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4AE18621D2325A00196D08 /* PromoCollectionViewCell.m */; };
 		BE4D59212233BCB9008A224D /* FaceDetectorUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE4D59202233BCB9008A224D /* FaceDetectorUtil.mm */; };
 		BE4D59242233BD8C008A224D /* FaceRecognizerUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE4D59232233BD8C008A224D /* FaceRecognizerUtil.mm */; };
-		BE4D592B2233BFD4008A224D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D592A2233BFD4008A224D /* opencv2.framework */; };
 		BE5BF17821BF9958003FA773 /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17721BF9958003FA773 /* ArticleListViewController.m */; };
 		BE5BF18B21BFB42B003FA773 /* TABMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17C21BFB42B003FA773 /* TABMethod.m */; };
 		BE5BF18C21BFB42B003FA773 /* TABViewAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BF17E21BFB42B003FA773 /* TABViewAnimated.m */; };
@@ -163,6 +162,7 @@
 		BEC280B121D32B70008E143E /* GoodsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC280B021D32B70008E143E /* GoodsCollectionViewCell.m */; };
 		BEC280B421D33176008E143E /* GoodsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC280B321D33176008E143E /* GoodsObject.m */; };
 		BEC280B721D35961008E143E /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC280B621D35961008E143E /* UIView+Category.m */; };
+		BECD1AD422B4DF0900C7B57E /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD1AD322B4DF0900C7B57E /* ChartsViewController.m */; };
 		BEDBAB0321C4E9FC00CD4CA3 /* BasicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDBAB0221C4E9FC00CD4CA3 /* BasicCollectionViewController.m */; };
 		BEDD90F021CA434F00A53AEA /* BasicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD90EF21CA434F00A53AEA /* BasicCollectionViewCell.m */; };
 		BEDDC7E621DF4E8200A6C8B0 /* BasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDC7E521DF4E8200A6C8B0 /* BasicNavigationController.m */; };
@@ -355,7 +355,6 @@
 		BE4D59202233BCB9008A224D /* FaceDetectorUtil.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetectorUtil.mm; sourceTree = "<group>"; };
 		BE4D59222233BD8C008A224D /* FaceRecognizerUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceRecognizerUtil.h; sourceTree = "<group>"; };
 		BE4D59232233BD8C008A224D /* FaceRecognizerUtil.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceRecognizerUtil.mm; sourceTree = "<group>"; };
-		BE4D592A2233BFD4008A224D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		BE5BF17621BF9958003FA773 /* ArticleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
 		BE5BF17721BF9958003FA773 /* ArticleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
 		BE5BF17A21BFB42B003FA773 /* TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimated.h; sourceTree = "<group>"; };
@@ -513,6 +512,8 @@
 		BEC280B321D33176008E143E /* GoodsObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsObject.m; sourceTree = "<group>"; };
 		BEC280B521D35961008E143E /* UIView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
 		BEC280B621D35961008E143E /* UIView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		BECD1AD222B4DF0900C7B57E /* ChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartsViewController.h; sourceTree = "<group>"; };
+		BECD1AD322B4DF0900C7B57E /* ChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartsViewController.m; sourceTree = "<group>"; };
 		BEDBAB0121C4E9FC00CD4CA3 /* BasicCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicCollectionViewController.h; sourceTree = "<group>"; };
 		BEDBAB0221C4E9FC00CD4CA3 /* BasicCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicCollectionViewController.m; sourceTree = "<group>"; };
 		BEDD90EE21CA434F00A53AEA /* BasicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicCollectionViewCell.h; sourceTree = "<group>"; };
@@ -656,6 +657,7 @@
 		BE13790421F1B336002DC33A /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				BECD1AD122B4DEE300C7B57E /* Charts */,
 				BE5D602C2230F5C9006A054E /* Face */,
 				BE13790521F1B378002DC33A /* TestHorizontalRefreshViewController.h */,
 				BE13790621F1B378002DC33A /* TestHorizontalRefreshViewController.m */,
@@ -884,14 +886,6 @@
 				BE43261121BBBD3C00C4AAFC /* NetWorkInfoManager.m */,
 			);
 			path = SystemTool;
-			sourceTree = "<group>";
-		};
-		BE4D59292233BFD4008A224D /* opencv */ = {
-			isa = PBXGroup;
-			children = (
-				BE4D592A2233BFD4008A224D /* opencv2.framework */,
-			);
-			path = opencv;
 			sourceTree = "<group>";
 		};
 		BE5BF17921BFB42B003FA773 /* TABAnimated */ = {
@@ -1274,6 +1268,15 @@
 				BEB66CFE21BE6D8100468435 /* Tools.m */,
 			);
 			path = Singleton;
+			sourceTree = "<group>";
+		};
+		BECD1AD122B4DEE300C7B57E /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				BECD1AD222B4DF0900C7B57E /* ChartsViewController.h */,
+				BECD1AD322B4DF0900C7B57E /* ChartsViewController.m */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		BEDDC7E321DF4E8200A6C8B0 /* NavigationBar */ = {
@@ -1702,6 +1705,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CustomProject_SF_OC/Pods-CustomProject_SF_OC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AAChartKit/AAChartKit.framework",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/AsyncDisplayKit/AsyncDisplayKit.framework",
@@ -1731,6 +1735,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAChartKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
@@ -1820,6 +1825,7 @@
 				BE4AE18121D22A2500196D08 /* TopicCollectionViewCell.m in Sources */,
 				BE4325D721BB9B8000C4AAFC /* CacheManager.m in Sources */,
 				BE4325F921BBA5DC00C4AAFC /* NetworkEnvironmentManager.m in Sources */,
+				BECD1AD422B4DF0900C7B57E /* ChartsViewController.m in Sources */,
 				BEA3C37321C356CB00919389 /* WKWebView+POST.m in Sources */,
 				BE6052F521BA662B00844F76 /* NotificationService.m in Sources */,
 				BE43260721BBB8A300C4AAFC /* ArticleRequestManager.m in Sources */,
